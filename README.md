@@ -103,7 +103,7 @@ npx vitest
 ## **🌟 デプロイ**
 
 このアプリケーションは Vercel を使用してデプロイされています。  
-デプロイ先の URL:
+デプロイ先の URL: [https://web-yumemi-test.vercel.app/](https://web-yumemi-test.vercel.app/)
 
 ---
 
