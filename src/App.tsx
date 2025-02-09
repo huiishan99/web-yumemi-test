@@ -130,7 +130,7 @@ const App: React.FC = () => {
           <button className="toggle-theme-button" onClick={toggleTheme} aria-label="テーマ切り替え">
             {isDarkMode ? <FaSun /> : <FaMoon />}
           </button>
-          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="github-button">
+          <a href="https://github.com/huiishan99/web-yumemi-test" target="_blank" rel="noopener noreferrer" className="github-button">
             <FaGithub />
           </a>
         </div>
