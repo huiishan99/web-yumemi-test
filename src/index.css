@@ -1,0 +1,75 @@
+/* グローバル CSS 変数の定義 */
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --button-background-color: #4a5568;
+  --button-active-background-color: #4299e1;
+  --font-family: 'Arial, sans-serif';
+  --font-size: 16px;
+  --label-color: #000000;
+  --label-background-color: #e2e8f0;
+}
+
+/* テーマモード */
+.dark-mode {
+  --background-color: #0b0f17;
+  --text-color: #ffffff;
+  --button-background-color: #4a5568;
+  --button-active-background-color: #4299e1;
+  --label-color: #ffffff;
+  --label-background-color: #2d3748;
+}
+
+.light-mode {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --button-background-color: #e2e8f0;
+  --button-active-background-color: #63b3ed;
+  --label-color: #000000;
+  --label-background-color: #e2e8f0;
+}
+
+/* 全体のフォント設定とスタイル調整 */
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* 見出しのスタイル */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+/* リンクのスタイル */
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ボタンのスタイル */
+button {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.5em;
+  }
+}

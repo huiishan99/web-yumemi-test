@@ -1,0 +1,173 @@
+/* ルートコンテナのスタイル */
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* 都道府県選択コンテナのグリッドレイアウト */
+.prefecture-selector {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 6px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* 都道府県選択ボックスのスタイル */
+.prefecture-label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  background-color: var(--label-background-color);
+  padding: 8px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease-in-out;
+  color: var(--label-color);
+}
+
+/* ホバー時の背景色変更 */
+.prefecture-label:hover {
+  background-color: #7989a8;
+}
+
+/* チェックボックスのサイズ */
+.prefecture-checkbox {
+  width: 16px;
+  height: 16px;
+}
+
+/* 都道府県名のスタイル */
+.prefecture-name {
+  font-size: 14px;
+}
+
+/* ボタングループのスタイル */
+.button-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* チャートコンテナのスタイル */
+.chart-container {
+  width: 100%;
+  max-width: 800px;
+  transition: opacity 0.3s ease-in-out;
+  margin: 0 auto;
+}
+
+/* アプリケーションのメインコンテナ */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 1.5rem;
+  position: relative;
+}
+
+/* 副タイトルとテーマ切り替えボタンのコンテナ */
+.subtitle-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+}
+
+/* 右上のボタングループ */
+.top-right-buttons {
+  display: flex;
+  gap: 0.5rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+/* メインタイトルのスタイル */
+.app-title {
+  font-size: 1.875rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* 副タイトルのスタイル */
+.app-subtitle {
+  font-size: 1.125rem;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+/* ボタンの基本スタイル */
+.button {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem auto;
+  border-radius: 0.375rem;
+  background-color: var(--button-background-color);
+  color: var(--text-color);
+  border: none;
+  cursor: pointer;
+}
+
+/* アクティブ状態のボタン */
+.button-active {
+  background-color: var(--button-active-background-color);
+}
+
+/* テーマ切り替えボタンとGitHubボタンの共通スタイル */
+.toggle-theme-button, .github-button {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.375rem;
+  background-color: var(--button-background-color);
+  color: var(--text-color);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* レスポンシブデザイン（600px以下の画面サイズに対応） */
+@media (max-width: 600px) {
+  /* 都道府県選択のグリッド調整 */
+  .prefecture-selector {
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    gap: 4px;
+  }
+
+  /* ボタングループの間隔調整 */
+  .button-group {
+    gap: 6px;
+  }
+
+  /* チャートコンテナのパディング調整 */
+  .chart-container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  /* 副タイトルコンテナのレイアウト変更 */
+  .subtitle-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+  }
+
+  /* 右上ボタングループの位置調整 */
+  .top-right-buttons {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+}
