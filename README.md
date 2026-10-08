@@ -39,6 +39,9 @@
 
 ## **📦 セットアップ**
 
+Node.js 22.13 以降の 22.x、または Node.js 24 以降を推奨します。
+更新後のテスト環境は Vitest 4 を使用します（Node.js 20.19 以降の 20.x も対応）。
+
 ### **1️⃣ クローン**
 リポジトリをクローンしてください：
 ```sh
@@ -49,7 +52,7 @@ git clone https://github.com/huiishan99/web-yumemi-test
 
 ### **2️⃣ 依存パッケージのインストール**
 ```sh
-npm install
+npm ci
 ```
 または
 ```sh
@@ -123,5 +126,6 @@ npx vitest
 | ホスティングサービスでデプロイ | ✅ |
 
 ---
+
 
 
