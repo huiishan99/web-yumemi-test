@@ -1,6 +1,5 @@
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import "@testing-library/jest-dom";
 import { vi } from "vitest";
 import App from "../App";
 
@@ -62,3 +61,4 @@ describe("App.tsx", () => {
     expect(checkbox).toBeChecked();
   });
 });
+
